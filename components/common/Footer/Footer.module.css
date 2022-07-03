@@ -1,0 +1,36 @@
+.root {
+  @apply flex w-full flex-col items-center justify-center gap-5;
+}
+.wrapper {
+  @apply container mx-auto items-center;
+}
+.logo {
+  @apply w-52 fill-secondary;
+}
+.top {
+  @apply grid grid-cols-1 gap-10 md:grid-cols-2;
+}
+.topFirst {
+  @apply inline-flex flex-col gap-5 md:pr-10 lg:pr-16;
+}
+.topSecond {
+  @apply inline-grid grid-cols-2 gap-5;
+}
+.topSecondWrap {
+  @apply flex flex-col gap-5;
+}
+.topSecondWrap h6 {
+  @apply font-semibold text-secondary-2;
+}
+.topSecondWrap div {
+  @apply inline-flex flex-col gap-3;
+}
+.bottom {
+  @apply w-full bg-primary-2 py-5;
+}
+.bottomWrap {
+  @apply flex flex-col-reverse gap-5 font-medium text-secondary-2 md:flex-row md:justify-between;
+}
+.bottomPolicy {
+  @apply grid grid-cols-2 gap-3;
+}

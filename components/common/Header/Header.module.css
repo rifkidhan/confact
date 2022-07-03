@@ -1,0 +1,15 @@
+.root {
+  @apply container sticky top-0 z-50 mx-auto mb-5 block py-5 transition-all duration-500 ease-in-out md:mb-10;
+}
+.navbarActive {
+  @apply visible;
+}
+.navbarInactive {
+  @apply invisible -translate-y-full;
+}
+.wrap {
+  @apply container mx-auto;
+}
+.logo {
+  @apply w-32 fill-secondary-2;
+}

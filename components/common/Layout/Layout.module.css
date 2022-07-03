@@ -1,0 +1,6 @@
+.root {
+  @apply mx-auto flex h-full w-full max-w-[2560px] flex-col gap-5;
+}
+.main {
+  min-height: calc(100vh - 100px);
+}

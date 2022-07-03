@@ -1,0 +1,21 @@
+.root {
+  @apply flex max-h-fit w-full flex-col gap-5 divide-y-2 divide-black rounded-xl border-2 border-black p-5;
+}
+.menu {
+  @apply flex flex-row flex-wrap gap-3;
+}
+.menuContainer {
+  @apply flex flex-row gap-1;
+}
+.menuContainer button {
+  @apply rounded-lg border border-black p-1;
+}
+.menuContainer button svg {
+  @apply h-5 w-5 stroke-2;
+}
+.buttonActive {
+  @apply bg-secondary;
+}
+.buttonActive svg {
+  @apply stroke-white;
+}

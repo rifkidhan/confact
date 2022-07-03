@@ -1,0 +1,54 @@
+.root {
+  @apply w-full rounded-3xl p-5;
+}
+.event {
+  @apply grid grid-cols-1 gap-16;
+}
+.eventTop {
+  @apply flex flex-col gap-5;
+}
+.eventTopTitle {
+  @apply font-koulen text-4xl tracking-[-0.01rem];
+}
+.eventTopDate {
+  @apply font-koulen text-xl leading-4 text-crayola;
+}
+.eventImage {
+  @apply relative mb-2 h-24 w-24 overflow-hidden rounded-3xl;
+}
+.eventBottom {
+  @apply flex flex-row items-end justify-between;
+}
+.eventBottomTextName {
+  @apply font-koulen text-xl leading-4 text-secondary-2;
+}
+.eventBottomTextJob {
+  @apply font-medium text-secondary-3;
+}
+.eventBottomArrow {
+  @apply w-8 stroke-secondary;
+}
+.testimonial {
+  @apply grid grid-cols-1 gap-10;
+}
+.testimonialTop {
+  @apply flex flex-col;
+}
+.testimonialTopTitle {
+  @apply font-koulen text-4xl tracking-[-0.01rem];
+}
+.testimonialTopTitle span {
+  @apply text-crayola;
+}
+.testimonialTopMessage {
+  @apply font-normal;
+}
+.testimonialImage {
+  @apply relative mb-2 h-14 w-14 overflow-hidden rounded-3xl;
+}
+.testimonialBottom {
+  @apply flex flex-row items-center gap-3;
+}
+.blank {
+  @apply flex flex-col;
+}

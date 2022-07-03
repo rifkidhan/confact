@@ -1,0 +1,89 @@
+@import url(./fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror {
+  margin: 0;
+}
+.ProseMirror:focus {
+  outline: none;
+}
+
+@layer base {
+  :root {
+    --primary: #fff;
+    --secondary: #000;
+    --primary-2: #f5f4f3;
+    --secondary-2: #323334;
+    --primary-3: #eef1ec;
+    --secondary-3: #4e4f51;
+    --text-base: #000;
+    --text-primary: #000;
+    --text-secondary: #fff;
+    --selection: 'var(--crayola)';
+    --accent-9: #1c2122;
+    --accent-8: #323c3e;
+    --accent-7: #49575a;
+    --accent-6: #607276;
+    --accent-5: #788d91;
+    --accent-4: #94a5a8;
+    --accent-3: #b0bcbf;
+    --accent-2: #ccd4d6;
+    --accent-1: #e9eced;
+
+    --smoke: #4e4f51;
+    --crayola: #fb554c;
+    --coral: #fdb3af;
+    --misty: #fde9e3;
+    --mango: #f4bb44;
+    --sunny: #ffd6ad;
+    --linen: #f8f4e7;
+    --sage: #eef1ec;
+    --seaform: #cce0de;
+    --opal: #8dbab5;
+    --oyster: #e1d6cc;
+    --timber: #bba28b;
+  }
+  h1 {
+    @apply font-koulen text-6xl leading-[.9] tracking-[-0.01rem] md:text-8xl;
+  }
+  h2 {
+    @apply font-koulen text-6xl tracking-[-0.01rem];
+  }
+  h3 {
+    @apply font-koulen text-4xl tracking-[-0.01rem];
+  }
+  h4 {
+    @apply font-koulen text-3xl tracking-[-0.01rem];
+  }
+  h5 {
+    @apply font-koulen text-xl leading-4;
+  }
+  h6 {
+    @apply text-lg;
+  }
+  html,
+  body {
+    @apply box-border h-full touch-manipulation overscroll-x-none bg-primary font-general font-medium antialiased;
+  }
+  body {
+    @apply relative m-0 min-h-full text-base;
+  }
+}
+
+@layer components {
+  .caption {
+    @apply text-xs leading-4;
+  }
+  .p-small {
+    @apply text-sm leading-6;
+  }
+  .p.large {
+    @apply text-lg leading-8;
+  }
+  .richtext-content {
+    @apply prose my-5 min-h-[10rem] w-full max-w-none sm:prose-sm lg:prose-lg;
+  }
+}
